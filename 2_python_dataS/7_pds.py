@@ -14,3 +14,4 @@ print('Counts', counts)
 names = {'Sameep' : 22, 'Jerusalem' :3022, 'Saleem' : 55}
 for key in names:
 	print(key, names[key])
+

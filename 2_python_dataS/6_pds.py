@@ -22,3 +22,4 @@ for name in names :
 
 
 print(counts)
+print(counts)
