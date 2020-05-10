@@ -9,6 +9,7 @@ for line in handle:
 
 bigCount = None
 bigWord = None
+#print(counts.items())
 
 for word,count in counts.items():
 	if bigCount is None or count > bigCount:
