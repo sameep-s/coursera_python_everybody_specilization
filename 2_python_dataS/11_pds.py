@@ -12,4 +12,9 @@ for key, val in counts.items():
 
 lst = sorted(lst, reverse=True)
 for val, key in lst[:10]:
-	print('Keys: ', key, '  ,Values/Times occured: ', val)
+	print('Keys: ', key, '  ,Values: ', val)
+
+
+#Short way to do what we did Above.
+c = {'a':10, 'b':1, 'c':22}
+print(sorted([ (v,k) for k,v in c.items()], reverse=True))
