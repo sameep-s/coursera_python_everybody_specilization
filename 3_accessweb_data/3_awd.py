@@ -4,9 +4,14 @@ import re
 fh = open('act_data.txt')
 x = list()
 i = 0
+j = 0
+s = 0
 for line in fh:
+	s = s + 1
 	y = re.findall('([0-9]+)', line)
 	if len(y) == 0: continue
+	print(y)
+	j = j+1
 	n = 0
 	while n < len(y):
 		z = int(y[n])
@@ -14,8 +19,12 @@ for line in fh:
 		x.append(z)
 		i = i + 1
 
-print('The sum is:', sum(x))
-print('Number of Items are: ', i)
+print('++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+print('=>The sum is:', sum(x))
+print('=>Number of Items in list are: ', i)
+print('=>The number of tuples are:', j)
+print('=>The number of lines read are:', s)
+
 
 
 
