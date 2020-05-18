@@ -1,5 +1,4 @@
 #Assignment1, week2
-
 import re
 fh = open('act_data.txt')
 x = list()
@@ -36,6 +35,7 @@ print('=>The number of lines read are:', s)
 
 
 '''
+#Someone else's code taken for reference.
 import re
 
 sum = 0
