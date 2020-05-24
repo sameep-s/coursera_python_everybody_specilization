@@ -1,3 +1,4 @@
+#Assignment 1
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
@@ -7,17 +8,11 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-url = input('Enter -')
+url = input('Enter Url: ')
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
-#Retrieve all of the anchor tags
-n = 0
-tags = soup('a')
+#retrieve all anchor tags
+tags = soup('span')
 for tag in tags:
-	print(tag.get('href', None))
-#	print('attrs', tag.attrs)
-#	print('Contents :' ,tag.contents[0])
-	n = n + 1
-print('-------------------------------------------------------------------------------------------')
-print('The number of Tags fetched are:', n)
+	print(tag.get('span', None))
