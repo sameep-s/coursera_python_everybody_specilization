@@ -30,11 +30,6 @@ print('=>The number of lines read are:', s)
 
 
 
-
-
-
-
-
 '''
 import re
 
