@@ -1,7 +1,7 @@
 #Assignment 1
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
-import ssl
+import ssl 
 
 #Ignore SSL certificate errors
 ctx = ssl.create_default_context()
@@ -14,5 +14,10 @@ soup = BeautifulSoup(html, 'html.parser')
 
 #retrieve all anchor tags
 tags = soup('span')
+sum = 0
 for tag in tags:
-	print(tag.get('span', None))
+#	print(tag.get('class', None))
+#	print(tag.attrs)
+	intTag= int(tag.contents[0])
+	sum = sum + intTag
+print(sum)

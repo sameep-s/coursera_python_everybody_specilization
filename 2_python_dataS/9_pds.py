@@ -10,7 +10,6 @@ for line in handle:
     if not line.startswith('From:'): continue
     words = line.split()
     words = words[1]
-    print(words)
     counts[words] = counts.get(words, 0) + 1
 print('---------------------------------------------------------------------------------')
 
@@ -23,5 +22,5 @@ for word,count in counts.items():
 		bigcount = count
 		bigword = word
 
-print('bigword:'bigword, 'bigcount:'bigcount)
+print('bigword:',bigword, 'bigcount:',bigcount)
 
