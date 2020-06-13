@@ -29,11 +29,6 @@ print('=>The number of lines read are:', s)
 
 
 
-
-
-
-
-
 '''
 #Someone else's code taken for reference.
 import re
